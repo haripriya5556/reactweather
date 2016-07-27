@@ -1,8 +1,10 @@
 var express=require('express');
 var app=express();
+app.use(express.static(__dirname + '/'));
 
+app.listen(process.env.PORT || 8080);
 
-app.use(express.static('public'));
-app.listen($PORT, function(){
+//app.use(express.static('public'));
+//app.listen($PORT, function(){
  console.log('express server is upon $PORT ');
 });

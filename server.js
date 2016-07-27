@@ -13,4 +13,4 @@
 //app.listen(PORT, function () {
  //console.log('express server is upon port '+ PORT);
 //});
-var server = require('http').createServer(app).listen(process.env.PORT || 8080);
+var server = require('http').createServer(express).listen(process.env.PORT || 8080);
